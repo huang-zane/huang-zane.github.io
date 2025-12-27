@@ -1,0 +1,47 @@
+name: Update Profile Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data.json'      # 當資料變更時觸發
+      - 'templates/**'   # 當模板變更時觸發
+      - 'build.py'       # 當腳本變更時觸發
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # 需要寫入權限來 commit 生成的 html
+
+    steps:
+      - name: Checkout content
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jinja2
+
+      - name: Run build script
+        run: python build.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 檢查是否有檔案變更
+          git add index.html zh.html
+          
+          # 如果沒有變更，git commit 會失敗，所以用 || echo 來忽略錯誤
+          git commit -m "Auto-generate HTML site from data.json" || echo "No changes to commit"
+          
+          git push
