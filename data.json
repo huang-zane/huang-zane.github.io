@@ -1,0 +1,93 @@
+{
+  "common": {
+    "name": { "zh": "黃振", "en": "Zane Huang" },
+    "title": { "zh": "法律與科技", "en": "Law & Tech" },
+    "email": "",
+    "github": "https://github.com/huang-zane",
+    "linkedin": "https://linkedin.com/in/",
+    "blog": "https://zanehuang.com/blog",
+    "repoHub": "https://github.com/huang-zane?tab=repositories",
+    "image": "images/profile.jpg"
+  },
+  "about": {
+    "zh": "因為線上遊戲想要自學程式的小小網頁工程師，被教育法吸引，逐漸變成公法人的樣子。",
+    "en": "A self-taught web developer sparked by online gaming, drawn into Education Law, and evolving into a Public Law scholar. "
+  },
+  "publications": [
+    {
+      "year": "2024",
+      "title_en": "",
+      "title_zh": "國民中小學學生參與學校行政在CRC與憲法上的保障",
+      "publisher": "",
+      "link": "#",
+      "grant": ""
+    },
+    {
+      "year": "",
+      "title_en": "",
+      "title_zh": "",
+      "publisher": "",
+      "link": ""
+    }
+  ],
+  "commentary": [
+    {
+      "date": "2023-10-09",
+      "media": "自由評論網",
+      "title": "廢考監可以，凍結考監不可行",
+      "link": "https://talk.ltn.com.tw/article/breakingnews/4453240"
+    },
+    {
+      "date": "2022-08-30",
+      "media": "聯合報",
+      "title": "多元宇宙？數位部需要接地氣",
+      "link": ""
+    },
+    {
+      "date": "2018-09-09",
+      "media": "聯合報",
+      "title": "綠棄麥寮人 早晚被人民棄",
+      "link": ""
+    }
+  ],
+  "governance": [
+    {
+      "role_zh": "首席學生法官",
+      "role_en": "Chief Student Judge",
+      "org_zh": "臺北大學學生法院",
+      "org_en": "Student Judiciary, NTPU",
+      "term": "2023 - 2025"
+    },
+    {
+      "role_zh": "秘書長",
+      "role_en": "Secretary General",
+      "org_zh": "臺北大學三峽校區學生議會",
+      "org_en": "Student Congress (Sanxia), NTPU",
+      "term": "2025 - Present"
+    }
+  ],
+  "legalExp": [
+    {
+      "title_zh": "申訴評議決定書草擬",
+      "title_en": "Drafting Student Appeal Decisions",
+      "desc_zh": "協助草擬校內學生申訴評議決定書。",
+      "desc_en": "Drafting legal decisions."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shared Tools",
+      "desc_en": "Repo.",
+      "desc_zh": "原生 JS 小工具，可以合併、轉換 PDF 還有排版中文 OCR 文字。",
+      "tags": ["JavaScript"],
+      "link": "https://huang-zane.github.io/shared-tools"
+    },
+    {
+      "name": "Test Name",
+      "desc_en": "Test.",
+      "desc_zh": "測試。",
+      "tags": ["Nuxt.js", "Vibe coding", "Tailwind"],
+      "link": "#"
+    }
+  ]
+}
